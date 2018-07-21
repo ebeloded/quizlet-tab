@@ -1,0 +1,10 @@
+{
+  "env": {
+    "production": {
+      "plugins": [["emotion", { "hoist": true }]]
+    },
+    "development": {
+      "plugins": [["emotion", { "autoLabel": true }]]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+[debug] [2018-07-21T14:50:02.220Z] ----------------------------------------------------------------------
+[debug] [2018-07-21T14:50:02.223Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2018-07-21T14:50:02.223Z] CLI Version:   3.19.3
+[debug] [2018-07-21T14:50:02.223Z] Platform:      darwin
+[debug] [2018-07-21T14:50:02.223Z] Node Version:  v6.11.5
+[debug] [2018-07-21T14:50:02.224Z] Time:          Sat Jul 21 2018 21:50:02 GMT+0700 (+07)
+[debug] [2018-07-21T14:50:02.224Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-21T14:50:02.236Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-21T14:50:02.237Z] > authorizing via signed-in user
+[debug] [2018-07-21T14:50:02.239Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-07-21T14:50:02.239Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/NDeP_FIGQPhrAxkqvpbQ50EuRNGNvs_1TrMVeSiDpO0',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sat Jul 21 2018 21:50:02 GMT+0700 (+07)
+[debug] [2018-07-21T14:50:02.527Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-21T14:50:02.545Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/quizlet-tab  
+  
+ Sat Jul 21 2018 21:50:02 GMT+0700 (+07)
+[debug] [2018-07-21T14:50:04.028Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-21T14:50:04.029Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/quizlet-tab/tokens  
+  
+ Sat Jul 21 2018 21:50:04 GMT+0700 (+07)
+[debug] [2018-07-21T14:50:04.932Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-21T14:50:04.933Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/quizlet-tab  
+  
+ Sat Jul 21 2018 21:50:04 GMT+0700 (+07)
+[debug] [2018-07-21T14:50:06.405Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/evgenijbeloded/Code/quizlet-tab'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-07-21T14:50:06.951Z] Fetching environment
+[debug] [2018-07-21T14:50:06.953Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/832183701961:getServerAppConfig  
+  
+ Sat Jul 21 2018 21:50:06 GMT+0700 (+07)
+[debug] [2018-07-21T14:50:07.801Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-21T14:50:07.802Z] Starting @google-cloud/functions-emulator
+[debug] [2018-07-21T14:50:09.361Z] Parsing function triggers
+[info] ✔  functions: helloWorld: http://localhost:5000/quizlet-tab/us-central1/helloWorld
