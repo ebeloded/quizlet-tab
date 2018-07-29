@@ -4,5 +4,9 @@
   "version": "0.0.1",
   "chrome_url_overrides": {
     "newtab": "index.html"
+  },
+  "permissions": ["storage"],
+  "externally_connectable": {
+    "matches": ["http://localhost:5000/*"]
   }
 }

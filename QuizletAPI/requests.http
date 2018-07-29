@@ -1,0 +1,11 @@
+@base = https://api.quizlet.com/2.0
+@clientID = SVRTeppr9y
+@token = sqFtuWY3Qpdc9gR8dQfGHA9Y9ANYNVdS2vRsTuc7
+
+###
+GET {{base}}/users/Zhendalf
+Authorization: Bearer {{token}}
+
+###
+
+GET http://localhost:5000/quizlet-tab/us-central1/auth?hello=world

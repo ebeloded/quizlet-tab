@@ -1,15 +1,42 @@
-import { h, render, Component } from 'preact'
-import { css } from 'emotion'
+import { h, Component } from 'preact'
 
-const clockStyle = css`
-  color: red;
-  background: linear-gradient(red, yellow);
-`
+interface ClockState {
+  time: number
+}
 
-export default class Clock extends Component {
-  render() {
-    console.log('render called')
-    let time = new Date().toLocaleTimeString()
-    return <span className={clockStyle}>{time}</span>
+interface ClockProps {}
+
+export default class Clock extends Component<ClockProps, ClockState> {
+  interval?: number
+
+  // constructor(props: ClockProps) {
+  //   super(props)
+
+  //   chrome.storage.local.get('time', ({ time }: { time: number }) => {
+  //     console.log('get time', time)
+  //     this.setState({ time: time || 0 })
+  //   })
+  // }
+
+  // componentDidMount() {
+  //   this.interval = setInterval(() => {
+  //     this.setState(
+  //       ({ time }: ClockState) => ({
+  //         time: time + 1
+  //       }),
+  //       () => {
+  //         console.log('set time', this.state.time)
+  //         chrome.storage.local.set({ time: this.state.time })
+  //       }
+  //     )
+  //   }, 1000)
+  // }
+
+  // componentWillUnmount() {
+  //   if (this.interval) clearInterval(this.interval)
+  // }
+
+  render(_props: never, { time }: ClockState) {
+    return <div>Time: {time}</div>
   }
 }

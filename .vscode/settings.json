@@ -1,0 +1,11 @@
+{
+  "rest-client.previewOption": "body",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "functions/": true
+  }
+}
